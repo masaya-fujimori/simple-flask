@@ -1,5 +1,5 @@
 function getGreeting() {
-    fetch('http://localhost:8000/api/greet')
+    fetch('http://localhost:5000/api/greet')
         .then(response => response.json())
         .then(data => {
             document.getElementById('greeting').textContent = data.message;
